@@ -17,6 +17,7 @@ const addText=(event)=>{
 const [text,setText]=useState("Enter your text")
 
 return (
+<>
 <div>
 <div className="mb-3">
 <h1>{props.heading} </h1>
@@ -27,5 +28,10 @@ return (
 </div>
 <button className="btn btn-primary" onClick={convertUpper}>Convert to Upper Case</button>
 </div>
+<div className='container my-2' >
+<p>{text.split(" ").length} Words and {text.length} Character</p>
+<p>{0.008 * text.split(" ").length} Minutes to read word {text.split(" ").length}</p>
+</div>
+</>
 );
 }
