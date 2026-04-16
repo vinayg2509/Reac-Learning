@@ -3,6 +3,7 @@ import Navbar from "./component/Navbar.js";
 import TextForm from "./component/TextForm.js";
 import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import About from "./component/About.js";
 
 function App() {
 const [mode, setMode] = useState("light");
@@ -47,6 +48,10 @@ return (
 
     <div className="container">
       <TextForm  showAlert={showAlert} heading="Welcome" label="Enter text to perform operation" />
+    </div>
+
+    <div className='container'>
+       <About/>
     </div>
   </>
 );
