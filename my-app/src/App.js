@@ -4,6 +4,8 @@ import TextForm from "./component/TextForm.js";
 import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./component/About.js";
+import Home from "./component/Home.js";
+
 
 function App() {
 const [mode, setMode] = useState("light");
@@ -53,6 +55,12 @@ return (
     <div className='container'>
        <About/>
     </div>
+
+    <div className='container'>
+       <Home/>
+    </div>
+
+    
   </>
 );
 }
