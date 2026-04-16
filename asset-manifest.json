@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Reac-Learning/static/css/main.e6c13ad2.css",
-    "main.js": "/Reac-Learning/static/js/main.f3973bf2.js",
-    "static/js/453.e9e7ec89.chunk.js": "/Reac-Learning/static/js/453.e9e7ec89.chunk.js",
-    "index.html": "/Reac-Learning/index.html",
-    "main.e6c13ad2.css.map": "/Reac-Learning/static/css/main.e6c13ad2.css.map",
-    "main.f3973bf2.js.map": "/Reac-Learning/static/js/main.f3973bf2.js.map",
-    "453.e9e7ec89.chunk.js.map": "/Reac-Learning/static/js/453.e9e7ec89.chunk.js.map"
+    "main.css": "/Reac-Learning/tree/dev/static/css/main.e6c13ad2.css",
+    "main.js": "/Reac-Learning/tree/dev/static/js/main.836d16c2.js",
+    "static/js/453.e9e7ec89.chunk.js": "/Reac-Learning/tree/dev/static/js/453.e9e7ec89.chunk.js",
+    "index.html": "/Reac-Learning/tree/dev/index.html",
+    "main.e6c13ad2.css.map": "/Reac-Learning/tree/dev/static/css/main.e6c13ad2.css.map",
+    "main.836d16c2.js.map": "/Reac-Learning/tree/dev/static/js/main.836d16c2.js.map",
+    "453.e9e7ec89.chunk.js.map": "/Reac-Learning/tree/dev/static/js/453.e9e7ec89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f3973bf2.js"
+    "static/js/main.836d16c2.js"
   ]
 }
