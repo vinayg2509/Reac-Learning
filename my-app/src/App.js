@@ -1,17 +1,35 @@
+import Alert from "./component/Alert.js";
 import Navbar from "./component/Navbar.js";
 import TextForm from "./component/TextForm.js";
 import { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 const [mode, setMode] = useState("light");
+const [alert, setAlert] = useState(null)
+
+const showAlert=(message,type)=>{
+  setAlert({
+    msg:message,
+    type:type
+  })
+  setTimeout(()=>{
+    showAlert(null)
+  },3000)
+}
+
+
 
 const toggleMode = () => {
   if (mode === "light") {
     setMode("dark");
     document.body.style.backgroundColor="grey"
+    showAlert("Dark mode enabled","Success")
   } else {
     setMode("light");
-    document.body.style.backgroundColor="white"
+  document.body.style.backgroundColor="white"
+    showAlert("Light mode enabled","Success")
+
 
   }
 };
@@ -24,8 +42,11 @@ return (
       mode={mode}
       toggleMode={toggleMode}
     />
+
+      <Alert alert={alert}/>
+
     <div className="container">
-      <TextForm heading="Welcome" label="Enter text to perform operation" />
+      <TextForm  showAlert={showAlert} heading="Welcome" label="Enter text to perform operation" />
     </div>
   </>
 );

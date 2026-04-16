@@ -8,6 +8,7 @@ const convertUpper=()=>
 {
     let newText=text.toUpperCase()
     setText(newText)
+   props. showAlert("Text converted to Upper Case","Success")
 }
 
 const addText=(event)=>{
