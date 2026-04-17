@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function UserDetails({ name, isOnline, hideOffLine }) {
+export default function UserDetails({ name, isOnline, hideOffLine ,isPremium,isNewUser ,role}) {
 //   if (hideOffLine && !isOnline) return null;
 
 //   if (isOnline) {
@@ -21,14 +21,29 @@ export default function UserDetails({ name, isOnline, hideOffLine }) {
 //     </>
 //   );
 
-// !Using ternary operator
+// !Using ternary operator and && operator
+                    let roleBadge=null
+                     if(role==='admin')
+                     {
+                        roleBadge='admin'
 
+                     }
+                     else if(role ==='user')
+                     {
+                        roleBadge='user'
+                     }
             return(
 
+               
+                
                 <div>
+                    
                     <h3>{name}</h3>
                     <small>{isOnline ?"Online":"Offline"}</small>
                     <p>{isOnline?"Is Avaliable for chat":"Not Avaliable"}</p>
+                    <p>{isPremium && <span>💎 Premium User</span>}</p>
+                    <p>{isNewUser&& <span>🥳 New User</span>}</p>
+                    <p>{roleBadge}</p>
 
                     {isOnline ?(
                         <button>Send Message</button>
@@ -38,4 +53,8 @@ export default function UserDetails({ name, isOnline, hideOffLine }) {
                     )}
                 </div>
             )
+
+
+
+
 }

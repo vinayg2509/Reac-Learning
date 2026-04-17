@@ -10,7 +10,10 @@ function App() {
   return (
   <>
     <UserDetails name="Tom" isOnline={true}/>
-    <UserDetails name="Jerry" isOnline={false} hideOffLine={true}></UserDetails>
+    <UserDetails name="Jerry" isOnline={false} hideOffLine={true} isNewUser={true} isPremium={true}></UserDetails>
+
+    <UserDetails name="Dutch" isOnline={true} hideOffLine={false} isNewUser={true} isPremium={true} role="admin"></UserDetails>
+
  </>
   )
 }
