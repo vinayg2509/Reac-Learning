@@ -5,11 +5,20 @@ import UserCard from './components/UserCard';
 import CardWrapper from './components/CardWrapper';
 import CustomButton from './components/CustomButton';
 import MyButton from './components/MyButton';
+import ContactUsButton from './components/ContactUsButton';
+import SubscribeButton from './components/SubscribeButton';
+import Menu from './components/Menu';
 
 function App() {
 
   return (
   <>
+
+      <Menu/>
+
+
+    <ContactUsButton/>
+    <SubscribeButton/>
 
       <CustomButton/>
 
