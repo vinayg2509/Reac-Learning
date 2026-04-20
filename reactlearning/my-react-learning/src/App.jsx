@@ -1,6 +1,7 @@
 import './App.css'
 
 import Counter from './components/Counter';
+import LoginCard from './LoginCard';
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   <>
 
 
-    <Counter/>
+      <LoginCard/>
  </>
   )
 }
