@@ -1,6 +1,7 @@
 import './App.css'
 import ShoppingCart from './components/ShoppingCart'
 import User from './components/User'
+import Input from './components/Input'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       {/* <ShoppingCart/>
        */}
        <User/>
+       <Input/>
   </>
   )
 }
